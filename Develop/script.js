@@ -1,6 +1,11 @@
-// Wrap all code that interacts with the DOM in a call to jQuery to ensure that
+// Wrap all code that interacts with the DOM in a call to jQuery (ask tutor what previous sentence means) to ensure that
 // the code isn't run until the browser has finished rendering all the elements
 // in the html.
+
+
+// Shows the current date under the title
+$('#currentDay').text(dayjs().format('dddd, MMMM D, YYYY'));
+
 $(function () {
   // TODO: Add a listener for click events on the save button. This code should
   // use the id in the containing time-block as a key to save the user input in
